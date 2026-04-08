@@ -3,20 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
-    <link rel="stylesheet" href="../pi-tdfe-grupo-integrador/css/styles.css">
 </head>
-<body id="register">
-<<<<<<< HEAD
-   <header> 
-<img src="./images/logo.jpg" alt="Logo Kitchening">
-<nav> <a >Home</a> 
-<a >Quienes</a> <a >Servicios</a> 
-<a >Portfolio</a> <a >Sucursales</a> 
-<a >Contacto</a> 
-</nav> 
-</header>
-=======
+<body>
+    
     <a href="./login.html">LOGIN</a>
     <a href="./category.html">CATEGORIAS</a>
     <a href="./register.html">REGISTRO</a>
@@ -24,108 +15,32 @@
     <a href="./product.html">PRODUCTOS</a>
     <a href="./index.html">INICIO</a>
 
-    <header> 
-        <img src="./images/logo.jpg" alt="Logo Kitchening">
-        <nav> 
-        </nav> 
-    </header>
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-
-
-<main> 
-<img src="./images/img-banner.jpg" alt="Banner principal"> 
-
-
-<section> 
-<article> 
-<img src="./images/img-1.jpg" alt="Producto 1"> 
-<h3>nombre prodt</h3> 
-<p>precio.</p> 
-<<<<<<< HEAD
-<a >Ver Más</a> 
-=======
-
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-</article> 
-
-
-<article> 
-<img src="./images/img-2.jpg" alt="Producto 2">
-<h3>nombre prod</h3> 
-<p>precio</p>
-<<<<<<< HEAD
-<a >Ver Más</a> 
-=======
-
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-</article> 
-
-
-<article> 
-<img src="./images/img-3.jpg" alt="Producto 3">
-<h3>nombre prod</h3> 
-<p>precio</p> 
-<<<<<<< HEAD
-<a >Ver Más</a> </article> 
-=======
-
- </article> 
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-</section> 
-
-
-<section> 
-<article> 
-<img src="./images/img-4.jpg" alt="Producto 4"> 
-<h3>nombre prod</h3> 
-<p>precio</p> 
-<<<<<<< HEAD
-<a >Ver Más</a> 
-=======
-
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-</article> 
-
-
-<article> 
-<img src="./images/img-5.jpg" alt="Producto 5"> 
-<h3>nombre prod</h3> 
-<p>precio</p> 
-<<<<<<< HEAD
-<a >Ver Más</a> 
-=======
-
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-</article> 
-
-
-<article> 
-<img src="./images/img-6.jpg" alt="Producto 6"> 
-<h3>nombre prod/h3> 
-<p>precio</p> 
-<<<<<<< HEAD
-<a >Ver Más</a> 
-=======
-
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-</article> 
-</section> 
-</main>
- 
-<footer> 
-<<<<<<< HEAD
-<a >Home</a> 
-<a >Quienes</a> 
-<a >Servicios</a> 
-<a >Portfolio</a> 
-<a >Sucursales</a> 
-<a >Contacto</a> 
-=======
-
-
-
->>>>>>> 2f23c9848daaa247b40429d59a8af2d360d82d87
-</footer>
-
+    <h1>Registro</h1>
+    <form class="fClass" action="./home.html" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirm_password">Confirmar Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <button type="submit">Register</button>
+        <button type="button" onclick="window.location.href='./login.html'">Tengo cuenta</button>
+        </div>
+    </form>
+    
 </body>
 </html>
