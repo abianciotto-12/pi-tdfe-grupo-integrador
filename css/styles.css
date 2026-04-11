@@ -107,6 +107,33 @@ body {
   color: black;
 }
 
+.index_banner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.coleccion_index{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  color:black;
+}
+
+.coleccion_index {
+  font-size: 13px;
+  padding: 20px 0px;
+  color: grey;
+}
+
+.coleccion_index {
+  font-size: 30px;
+  padding: 24px 0px 40px 0px;
+}
+
 #vendidos
 
 .productosVendidos{             /*el section*/
