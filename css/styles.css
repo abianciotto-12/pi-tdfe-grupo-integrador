@@ -65,3 +65,33 @@ body {
     
 }
    
+#aleatorio
+
+.productosAleatorios{
+     display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+}
+
+.elementos{             /*article*/
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+.fotos{                         /*fotos de la ropa*/
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.detalle{
+    display: inline-block;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    background-color:saddlebrown
+    
+}
