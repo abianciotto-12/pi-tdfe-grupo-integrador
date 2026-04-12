@@ -32,7 +32,57 @@
     </header>
    
 
+<section class="buscador">
 
+  <form action="./search.html" method="GET">
+
+    <label for="busqueda">¿Qué estás buscando?</label>
+
+    <div class="buscador_campo">
+      <input 
+        type="text" 
+        id="busqueda"
+        name="busqueda" 
+        placeholder="Buscar productos..."
+        value="">
+      <button type="submit">BUSCAR</button>
+    </div>
+
+    <div class="buscador_filtros">
+
+      <p>Categoría:</p>
+
+      <input type="radio" name="categoria" value="mujer" id="mujer">
+      <label for="mujer">Mujer</label>
+
+      <input type="radio" name="categoria" value="hombre" id="hombre">
+      <label for="hombre">Hombre</label>
+
+      <input type="radio" name="categoria" value="accesorios" id="accesorios">
+      <label for="accesorios">Accesorios</label>
+
+    </div>
+
+    <div class="buscador_checks">
+
+      <p>Filtros:</p>
+
+      <input type="checkbox" name="filtros" value="nuevo" id="nuevo">
+      <label for="nuevo">Nuevo</label>
+
+      <input type="checkbox" name="filtros" value="oferta" id="oferta">
+      <label for="oferta">Oferta</label>
+
+      <input type="checkbox" name="filtros" value="mas_vendido" id="mas_vendido">
+      <label for="mas_vendido">Más vendido</label>
+
+    </div>
+
+    <button type="reset">Limpiar filtros</button>
+
+  </form>
+
+</section>
 
 <footer class="site_footer">
   <div class="footer_inner">
