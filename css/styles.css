@@ -19,6 +19,11 @@ body {
   background-color: #fff;
   line-height: 1.6;
 }
+
+li{
+    list-style: none;
+    margin-right: 15px;
+}
 .fClass{
     display: flex;
     justify-content: center;
