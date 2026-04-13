@@ -1,96 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ropa ZARA</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Cormorant+Garamond:wght@300;400&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body id="search">
     <header class="webheader">
         <div class="indexheader">
             <ul class="navizq">
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./category.html">ALEATORIO</a></li>
-            <li><a href="./product.html">MAS VENDIDOS</a></li>
-            <li><a href="./search.html">BUSCAR</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./category.html">ALEATORIO</a></li>
+                <li><a href="./product.html">MAS VENDIDOS</a></li>
+                <li>
+                    <form action="./search.html" method="GET">
+                        <div class="buscadorCampo">
+                            <input type="text" id="busqueda" name="busqueda" placeholder="Buscar productos..." value="">
+                            <button type="submit">BUSCAR</button>
+                        </div>
+
+
+                    </form>
+                </li>
             </ul>
 
-        <a href="./index.html" class="logo">ARIES</a>
+            <a href="./index.html" class="logo">ARIES</a>
 
             <ul class="navder">
                 <li><a href="./login.html">LOGIN</a></li>
                 <li><a href="./register.html">REGISTRO</a></li>
             </ul>
 
-    
-    </div>
+
+        </div>
     </header>
-   
 
-<section class="buscador">
 
-  <form action="./search.html" method="GET">
+    <section class="buscador">
 
-    <label for="busqueda">¿Qué estás buscando?</label>
+        <form action="./search.html" method="GET">
 
-    <div class="buscadorCampo">
-      <input 
-        type="text" 
-        id="busqueda"
-        name="busqueda" 
-        placeholder="Buscar productos..."
-        value="">
-      <button type="submit">BUSCAR</button>
-    </div>
+            <label for="busqueda">¿Qué estás buscando?</label>
 
-    <div class="buscadorFiltros">
+            <div class="buscadorCampo">
+                <input type="text" id="busqueda" name="busqueda" placeholder="Buscar productos..." value="">
+                <button type="submit">BUSCAR</button>
+            </div>
 
-      <p>Categoría:</p>
+            <div class="buscadorFiltros">
 
-      <input type="radio" name="categoria" value="mujer" id="mujer">
-      <label for="mujer">Mujer</label>
+                <p>Categoría:</p>
 
-      <input type="radio" name="categoria" value="hombre" id="hombre">
-      <label for="hombre">Hombre</label>
+                <input type="radio" name="categoria" value="mujer" id="mujer">
+                <label for="mujer">Mujer</label>
 
-      <input type="radio" name="categoria" value="accesorios" id="accesorios">
-      <label for="accesorios">Accesorios</label>
+                <input type="radio" name="categoria" value="hombre" id="hombre">
+                <label for="hombre">Hombre</label>
 
-    </div>
+                <input type="radio" name="categoria" value="accesorios" id="accesorios">
+                <label for="accesorios">Accesorios</label>
 
-    <div class="buscadorChecks">
+            </div>
 
-      <p>Filtros:</p>
+            <div class="buscadorChecks">
 
-      <input type="checkbox" name="filtros" value="nuevo" id="nuevo">
-      <label for="nuevo">Nuevo</label>
+                <p>Filtros:</p>
 
-      <input type="checkbox" name="filtros" value="oferta" id="oferta">
-      <label for="oferta">Oferta</label>
+                <input type="checkbox" name="filtros" value="nuevo" id="nuevo">
+                <label for="nuevo">Nuevo</label>
 
-      <input type="checkbox" name="filtros" value="mas_vendido" id="masVendido">
-      <label for="masVendido">Más vendido</label>
+                <input type="checkbox" name="filtros" value="oferta" id="oferta">
+                <label for="oferta">Oferta</label>
 
-    </div>
+                <input type="checkbox" name="filtros" value="mas_vendido" id="masVendido">
+                <label for="masVendido">Más vendido</label>
 
-    <button type="reset">Limpiar filtros</button>
+            </div>
 
-  </form>
+            <button type="reset">Limpiar filtros</button>
 
-</section>
+        </form>
 
-<footer class="webfooter">
-  <div class="footerAdentro">
-    <p class="footerLogo">ARIES</p>
-    <p class="footerNombres"> Candela Nagel Suen; Azul Bianciotto; Luque</p>
-    <p class="footerDerechos">© 2025 ARIES. Todos los derechos reservados. --- Diseño & Desarrollo — Digital House</p>
-  </div>
-</footer>
+    </section>
+
+    <footer class="webfooter">
+        <div class="footerAdentro">
+            <p class="footerLogo">ARIES</p>
+            <p class="footerNombres"> Candela Nagel Suen; Azul Bianciotto; Luque</p>
+            <p class="footerDerechos">© 2025 ARIES. Todos los derechos reservados. --- Diseño & Desarrollo — Digital
+                House</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
