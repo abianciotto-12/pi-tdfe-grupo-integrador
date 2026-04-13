@@ -30,6 +30,7 @@ body {
 .web_header {
   border-bottom: 1px solid #ddd;
   background-color: white;
+  justify-content: space-between;
 }
 
 .index_header {
