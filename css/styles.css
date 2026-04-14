@@ -30,6 +30,7 @@ li{
     flex-direction: column;
     width: 40%;
     margin: 85px auto;
+    align-items: center;
 }
 
 .webheader {
