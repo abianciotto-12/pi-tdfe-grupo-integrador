@@ -33,6 +33,17 @@ li{
     align-items: center;
 }
 
+.hLogin{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 40px;
+    display: flex;
+    align-self: center;
+}
+
 .webheader {
   border-bottom: 1px solid #ddd;
   background-color: white;
@@ -184,4 +195,16 @@ li{
     background-color:saddlebrown
     
 }
+.loginbotton{
+  width: 32.2%;
+}
+.registerbotton{
+  width: 50%;
+  margin-bottom: 5px;
+}
+    
+@media (max-width:425px) {
 
+
+
+}
