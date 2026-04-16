@@ -14,35 +14,29 @@
 <body id="detalle">
 
     <header class="webheader">
-        <div class="indexheader">
-            <ul class="navizq">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./category.html">ALEATORIO</a></li>
-                <li><a href="./product.html">MAS VENDIDOS</a></li>
-                <li>
-                    <form action="./search.html" method="GET">
-                        <div class="buscadorCampo">
-                            <input type="text" id="busqueda" name="busqueda" placeholder="Buscar productos..." value="">
-                            <button type="submit">BUSCAR</button>
-                        </div>
+    <div class="indexheader">
+        <ul class="navizq">
+            <li><a href="./index.html">INICIO</a></li>
+            <li>
+                <form action="./category.html" method="GET">
+                    <div class="buscadorCampo">
+                        <input type="text" name="busqueda" placeholder="Buscar productos...">
+                        <button type="submit">BUSCAR</button>
+                    </div>
+                </form>
+            </li>
+        </ul>
 
+        <a href="./index.html" class="logo">ARIES</a>
 
-                    </form>
-                </li>
-            </ul>
-
-            <a href="./index.html" class="logo">ARIES</a>
-
-            <ul class="navder">
-                <li><a href="./login.html">LOGIN</a></li>
-                <li><a href="./register.html">REGISTRO</a></li>
-            </ul>
-
-
-        </div>
+        <ul class="navder">
+            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="./register.html">REGISTRO</a></li>
+        </ul>
+    </div>
     </header>
 
-    <h1>Detalle del producto</h1>
+    <h1 class="coleccionIndex">Detalle del producto</h1>
 
     <br>
 
@@ -55,35 +49,35 @@
                 <h4>CAMISETA RELAXED FIT RIBETE</h4>
                 <p class="texto">Camiseta relaxed fit confeccionada en tejido de algodón compacto. Cuello redondo acabado con rib doble y manga corta.</p>
                 <p class="texto">105.990,00 ARS</p>
-                <p>Categoria : Hombre</p>
-                <p>Stock disponible : +10</p>
-                <p>Tags</p>
+                <p class="footerNombres">Categoria : Hombre</p>
+                <p class="footerNombres">Stock disponible : +10</p>
+                <p class="footerNombres">Tags</p>
             </article>
 
         </section>
 
         <section class="contenedor-reviews">
             <div class="texto-encabezado">
-                <h2>Sección de reviews</h2>
-                <p>Lo que dicen quienes ya nos eligieron</p>
+                <h2 class="reviews">Sección de reviews</h2>
+                <p class="previews">Lo que dicen quienes ya nos eligieron</p>
             </div>
 
             <div class="caja-flex">
                 <article class="tarjeta-review">
                     <img src="./imagenes/usuario1.png" alt="" class="foto-perfil">
-                    <h3>Juan Perez</h3>
+                    <h3 class="nombreReview">Juan Perez</h3>
                     <p class="texto-comentario">"Excelente servicio, muy atentos en todo momento."</p>
                 </article>
 
                 <article class="tarjeta-review">
                     <img src="./imagenes/usuario2.png" alt="" class="foto-perfil">
-                    <h3>Maria Garcia</h3>
+                    <h3 class="nombreReview">Maria Garcia</h3>
                     <p class="texto-comentario">"La calidad de los productos es increíble. Muy conforme."</p>
                 </article>
 
                 <article class="tarjeta-review">
                     <img src="./imagenes/usuario3.png" alt="" class="foto-perfil">
-                    <h3>Carlos Lopez</h3>
+                    <h3 class="nombreReview">Carlos Lopez</h3>
                     <p class="texto-comentario">"Envío rápido y en perfectas condiciones."</p>
                 </article>
             </div>
