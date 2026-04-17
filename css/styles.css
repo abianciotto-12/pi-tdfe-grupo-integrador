@@ -364,7 +364,8 @@ li{
       flex-direction: column-reverse;
         display: flex;
         height: auto;
-        gap: 20px;  
+        gap: 20px; 
+        padding: 10px 0px; 
     }
 
     .logo {
@@ -386,6 +387,7 @@ li{
         display: flex;
         justify-content: center;
     }
+
     .buscadorCampo {
         width: 90%;
         display: flex;
@@ -440,18 +442,13 @@ li{
         margin: 30px auto;
     }
 
-    .loginbotton {
+    .loginbotton, .registerbotton {
         width: 100%;
         margin-bottom: 10px;
         padding: 12px;
     }
 
-    .registerbotton {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 12px;
-    }
-
+    
     .caja-flex {
         flex-direction: column;
         align-items: center;
