@@ -313,6 +313,15 @@ li{
   align-items: stretch;
 }
 
+.busqueda1 {
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: stretch;
+
+}
 .elementos{             /*article*/
     width: 380px;
     margin-bottom: 20px;
@@ -349,3 +358,4 @@ li{
     background-color:saddlebrown
     
 }
+
