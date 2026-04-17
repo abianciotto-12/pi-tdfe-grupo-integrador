@@ -359,3 +359,109 @@ li{
     
 }
 
+@media screen and (max-width: 445px) {
+    .indexheader {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;  
+    }
+
+    .logo {
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    .navizq {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navizq li {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+;
+
+    .buscadorCampo {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buscadorCampo input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    
+    .navder {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navder li {
+        margin: 0;
+    }
+
+  
+    .indexBanner img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .coleccionIndex {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    
+    .productos1, .productos2, .busqueda1 {
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .elementos {
+        width: 100%; 
+        max-width: 350px;
+        margin: 0 auto 25px auto;
+    }
+
+    
+    .fClass {
+        width: 90%; 
+        margin: 30px auto;
+    }
+
+    .loginbotton, .registerbotton {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 12px;
+    }
+
+    
+    .caja-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-review {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    
+    .footerNombres {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
