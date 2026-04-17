@@ -386,8 +386,6 @@ li{
         display: flex;
         justify-content: center;
     }
-;
-
     .buscadorCampo {
         width: 90%;
         display: flex;
@@ -442,13 +440,18 @@ li{
         margin: 30px auto;
     }
 
-    .loginbotton, .registerbotton {
+    .loginbotton {
         width: 100%;
         margin-bottom: 10px;
         padding: 12px;
     }
 
-    
+    .registerbotton {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 12px;
+    }
+
     .caja-flex {
         flex-direction: column;
         align-items: center;
