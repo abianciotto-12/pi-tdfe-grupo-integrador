@@ -1,36 +1,224 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
 a {
     text-decoration: none;
-    color: inherit;}
-
-
-
-h4 {font-family: 'Josefin Sans', sans-serif;
-font-weight: bold;
-text-transform: uppercase;}
-
-
-
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #111;
-  background-color: #fff;
-  line-height: 1.6;
+    color: inherit;
 }
 
-li{
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: black;
+    background-color: white;
+    line-height: 1.6;
+}
+
+li {
     list-style: none;
     margin-right: 15px;
 }
-.fClass{
+
+.webheader {
+    border-bottom: 1px solid white;
+    background-color: saddlebrown;
+}
+
+.indexheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 48px;
+    height: 64px;
+}
+
+.navizq,
+.navder {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navizq a,
+.navder a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.webfooter {
+    border-top: 1px solid black;
+    padding: 40px 48px;
+    text-align: center;
+}
+
+.footerLogo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.footerNombres {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: grey;
+    margin-bottom: 8px;
+}
+
+.footerDerechos {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    color: grey;
+}
+
+.indexBanner img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.coleccionIndex {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: saddlebrown;
+    font-size: 30px;
+    padding: 24px 0px 40px 0px;
+}
+
+/* ASIDE LAYOUT */
+.contenedor {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    min-width: 200px;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: grey;
+    margin: 0 0 30px 0;
+    font-weight: normal;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+}
+
+.contenido {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* PRODUCTOS */
+.productos1 {
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.productos2 {
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.busqueda1 {
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: stretch;
+}
+
+.elementos {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.fotos {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.texto {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.detalle {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    background-color: saddlebrown;
+}
+
+/* FORMS */
+.fClass {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -39,210 +227,22 @@ li{
     align-items: center;
 }
 
-.hLogin{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: black;
-    margin-top: 40px;
-    display: flex;
-    align-self: center;
+.loginbotton {
+    width: 32.2%;
 }
 
-.webheader {
-  border-bottom: 1px solid #ddd;
-  background-color: saddlebrown;
-  justify-content: space-between;
+.registerbotton {
+    width: 50%;
+    margin-bottom: 5px;
 }
 
-.indexheader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 48px;
-  height: 64px;
-}
-
-.navizq,
-.navder {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.navizq a,
-.navder a {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 11px;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  padding-bottom: 2px;
-}
-
-.logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
-
-.webfooter {
-  border-top: 1px solid black;
-  padding: 40px 48px;
-  text-align: center;
-}
-
-.footerLogo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: black;
-  margin-bottom: 12px;
-}
-
-.footerNombres {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-  color: grey;
-  margin-bottom: 8px;
-}
-
-.footerDerechos {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 10px;
-  color: grey;
-}
-
-
-.indexBanner img {
-  width: 100%;
-  height: 500px;
-  display: block;}
-
-
-.coleccionIndex {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: saddlebrown;
-  font-size: 30px;
-  padding: 24px 0px 40px 0px;
-}
-
-#index
-
-.productos1{             /*el section*/
-  display: flex;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: stretch;
-}
-
-.elementos{             /*article*/
-    width: 380px;
-    margin-bottom: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    
-}
-
-.fotos{                         /*fotos de la ropa*/
-    margin-bottom: 10px;
-    width: 100%;
-    
-    
-}
-
-.h3{
-  margin-bottom: 20px;
-}
-
-.texto{
-  font-family: 'Josefin Sans', sans-serif;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.detalle{
-    font-family: 'Josefin Sans', sans-serif;
-    display: inline-block;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px;
-    font-size: 12px;
-    color: white;
-    background-color:saddlebrown
-    
-}
-   
-
-
-.productos2{
-     display: flex;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;  
-}
-
-.elementos{             /*article*/
-    width: 380px;
-    margin-bottom: 20px;
-}
-
-.fotos{                         /*fotos de la ropa*/
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.texto{
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.detalle{
-    display: inline-block;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px;
-    font-size: 12px;
-    color: white;
-    background-color:saddlebrown
-    
-}
-.loginbotton{
-  width: 32.2%;
-}
-.registerbotton{
-  width: 50%;
-  margin-bottom: 5px;
-}
-   
-#detalle
-
+/* REVIEWS */
 .contenedor-reviews {
     max-width: 1180px;
     margin: 0 auto;
     padding: 40px 0;
     text-align: center;
-    font-family: Arial, sans-serif;
 }
-
 
 .caja-flex {
     display: flex;
@@ -251,33 +251,31 @@ li{
 }
 
 .tarjeta-review {
-    width: 30%; 
+    width: 30%;
     background-color: white;
     padding: 20px;
     border: 1px solid saddlebrown;
-    margin: 10px; 
-    text-align: center; 
+    margin: 10px;
+    text-align: center;
 }
 
 .foto-perfil {
-   
     width: 80px;
     height: 80px;
-    object-fit: cover; 
-    object-position: center; 
-    border-radius: 50%; 
-    margin-bottom: 15px; 
-    border: 3px solid white; 
-    
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid white;
 }
 
 .texto-comentario {
     font-family: 'Josefin Sans', sans-serif;
-    color: #666;
+    color: grey;
     font-size: 14px;
 }
 
-.reviews{
+.reviews {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     font-weight: normal;
@@ -287,7 +285,7 @@ li{
 }
 
 .previews {
-  font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
     font-weight: normal;
     color: black;
@@ -295,174 +293,75 @@ li{
 }
 
 .nombreReview {
-  font-family: 'Josefin Sans', sans-serif;
-    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-#category
-
-.productos1{             /*el section*/
-  display: flex;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: stretch;
-}
-
-.busqueda1 {
-  display: flex;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: stretch;
-
-}
-.elementos{             /*article*/
-    width: 380px;
-    margin-bottom: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;   
-}
-
-.fotos{                         /*fotos de la ropa*/
-    margin-bottom: 10px;
-    width: 100%; 
-}
-
-.h3{
-  margin-bottom: 10px;
-}
-
-.texto{
-  font-family: 'Josefin Sans', sans-serif;
-  margin-bottom: 15px;
-  margin-top: 5px;
-}
-
-.detalle{
-    font-family: 'Josefin Sans', sans-serif;
-    display: inline-block;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px;
-    font-size: 12px;
-    color: white;
-    background-color:saddlebrown
-    
-}
-
+/* RESPONSIVE */
 @media screen and (max-width: 445px) {
     .indexheader {
-      flex-direction: column-reverse;
-        display: flex;
+        flex-direction: column-reverse;
         height: auto;
-        gap: 20px; 
-        padding: 10px 0px; 
+        gap: 20px;
+        padding: 10px 0px;
     }
-
     .logo {
         font-size: 32px;
         width: 100%;
         text-align: center;
-        margin: 0;
-        display: block;
     }
-    .navizq {
+    .navizq, .navder {
         width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navizq li {
-        width: 100%;
-        margin: 0;
-        display: flex;
         justify-content: center;
     }
-
     .buscadorCampo {
         width: 90%;
         display: flex;
         justify-content: center;
     }
-
     .buscadorCampo input {
         width: 100%;
         padding: 10px;
         font-size: 14px;
     }
-
-    
-    .navder {
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navder li {
-        margin: 0;
-    }
-
-  
     .indexBanner img {
         height: 200px;
         object-fit: cover;
     }
-
     .coleccionIndex {
         font-size: 24px;
-        text-align: center;
     }
-
-    
-    .productos1, .productos2, .busqueda1 {
-        justify-content: center;
-        padding: 0 10px;
+    .contenedor {
+        flex-direction: column;
     }
-
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
     .elementos {
-        width: 100%; 
+        width: 100%;
         max-width: 350px;
         margin: 0 auto 25px auto;
     }
-
-    
     .fClass {
-        width: 90%; 
+        width: 90%;
         margin: 30px auto;
     }
-
     .loginbotton, .registerbotton {
         width: 100%;
         margin-bottom: 10px;
         padding: 12px;
     }
-
-    
     .caja-flex {
         flex-direction: column;
         align-items: center;
     }
-
     .tarjeta-review {
         width: 95%;
         margin-bottom: 20px;
-    }
-
-    
-    .footerNombres {
-        font-size: 12px;
-        text-align: center;
-        padding: 0 10px;
     }
 }
