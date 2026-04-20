@@ -102,7 +102,6 @@ li {
 .indexBanner img {
     width: 100%;
     height: 500px;
-    display: block; /*eliminar*/
 }
 
 .coleccionIndex {
@@ -156,7 +155,6 @@ li {
 }
 
 .contenido {
-    flex: 1; /*eliminar*/
     padding: 0 20px;
 }
 
@@ -299,6 +297,8 @@ li {
     text-transform: uppercase;
     font-size: 14px;
 }
+
+                
 
 /* RESPONSIVE */
 @media (max-width: 445px) {
