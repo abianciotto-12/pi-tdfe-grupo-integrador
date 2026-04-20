@@ -305,8 +305,7 @@ li {
     .indexheader {
         flex-direction: column-reverse;
         height: auto; /*eliminar*/
-        gap: 20px;  /*eliminar*/
-        padding: 10px 0px;
+        padding: 10px 10px;
     }
     .logo {
         font-size: 32px;
