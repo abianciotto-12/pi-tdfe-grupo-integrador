@@ -5,7 +5,6 @@ formLogin.addEventListener ('submit', function(e) {
 
     let inputEmail = document.querySelector('#inputEmail');
     let inputPassword = document.querySelector('#inputPassword');
-
     let errorEmail = document.querySelector('#errorEmail');
     let errorPassword = document.querySelector('#errorPassword');
 
@@ -26,10 +25,7 @@ formLogin.addEventListener ('submit', function(e) {
         errorPassword.innerText = 'La contraseña debe tener al menos 6 caracteres';
         hayErrores = true;
     }
-
-    if (hayErrores === false){
-        localStorage.setItem('email', inputEmail.value);
-        window.location.href = './index.html';
-
+    if (hayErrores === false) {
+        window.location.href = './index.html?email=' + inputEmail.value;
     }
 })

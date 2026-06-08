@@ -34,36 +34,24 @@
     </header>
 
     <h1 class="coleccionIndex">Registro</h1>
-    <form class="fClass" action="./index.html">
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div>
-            <label for="confirm_password">Confirmar Password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required>
-        </div>
-        <div>
-            <label for="terms">
-                <input type="checkbox" id="terms" name="terms" required>
-                Acepto los términos y condiciones
-            </label>
-        </div>
-        <button class="registerbotton" type="submit">Register</button>
-        <a href="./login.html">Ya tengo cuenta</a>
-        </div>
+    <form class="fClass" id="formRegister">
+       <input type="email" id="inputEmail" name="email" placeholder="Email">
+        <span class="errorMensaje" id="errorEmail"></span>
+
+        <input type="password" id="inputPassword" name="password" placeholder="Contraseña">
+        <span class="errorMensaje" id="errorPassword"></span>
+
+        <input type="password" id="inputRepetirPassword" name="repetirPassword" placeholder="Repetir contraseña">
+        <span class="errorMensaje" id="errorRepetirPassword"></span>
+
+        <label>
+            <input type="checkbox" id="inputTerminos" name="terms" required>
+            Acepto términos y condiciones
+        </label>
+        <span class="errorMensaje" id="errorTerminos"></span>
+
+        <button class="registerbotton" type="submit">Registrarme</button>
+        <a href="./login.html">Ya tengo una cuenta</a>
     </form>
 </header>
 
@@ -75,5 +63,7 @@
   </div>
 </footer>
 
+    <script src="./js/register.js"></script>
+    <script src="./js/saludo.js"></script>
 </body>
 </html>
