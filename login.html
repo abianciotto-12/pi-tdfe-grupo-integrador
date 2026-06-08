@@ -36,13 +36,16 @@
     </header>
 
      <h1 class="coleccionIndex">Login</h1>
-        <form class="fClass" action="./index.html" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button class="loginbotton" type="submit">Login</button>
-            <button class="loginbotton" type="reset">Reset</button>
-            <a href="./register.html">No tengo cuenta</a>
-        </form>
+        <form class="fClass" id="formLogin">
+        <input type="email" id="inputEmail" name="email" placeholder="Email">
+        <span class="errorMensaje" id="errorEmail"></span>
+
+        <input type="password" id="inputPassword" name="password" placeholder="Contraseña">
+        <span class="errorMensaje" id="errorPassword"></span>
+
+        <button class="loginbotton" type="submit">Ingresar</button>
+        <a href="./register.html">No tengo cuenta</a>
+    </form>
 <footer class="webfooter">
   <div class="footerAdentro">
     <p class="footerLogo">ARIES</p>
@@ -50,5 +53,12 @@
     <p class="footerDerechos">© 2025 ARIES. Todos los derechos reservados. --- Diseño & Desarrollo — Digital House</p>
   </div>
 </footer>
+<<<<<<< HEAD
+=======
+
+    <script src="./js/login.js"></script>
+    <script src="./js/saludo.js"></script>
+>>>>>>> ff4d45cb643f12e4a507728c34d56bcd07281972
 </body>
+
 </html>
