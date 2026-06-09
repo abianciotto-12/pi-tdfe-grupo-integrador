@@ -26,6 +26,7 @@ formLogin.addEventListener ('submit', function(e) {
         hayErrores = true;
     }
     if (hayErrores === false) {
-        window.location.href = './index.html?email=' + inputEmail.value;
+        localStorage.setItem('email', inputEmail.value);
+        window.location.href = './index.html';
     }
 })

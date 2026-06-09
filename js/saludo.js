@@ -1,6 +1,4 @@
-let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let email = queryStringObj.get('email');
+ let email = localStorage.getItem('email');
 
 let navder = document.querySelector('.navder');
 
