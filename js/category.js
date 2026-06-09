@@ -2,7 +2,7 @@ let queryString = location.search;
 
 let queryStringObj = new URLSearchParams(queryString);
 
-let categoria = queryStringObj.get("");  
+let id = queryStringObj.get("id");  
 
 fetch(`https://dummyjson.com/products/categories/${id}`) /*agregar el id*/
 
@@ -24,9 +24,13 @@ fetch(`https://dummyjson.com/products/categories/${id}`) /*agregar el id*/
 
         let producto = data[i];
 
-        productos += `<article>
-                        <p>${producto}</p>
-                    </article>`;
+        productos += `<article class="elementos">
+                            <img class="fotos" src="${producto.thumbnail}" alt="">
+                            <h4 class="titulo-producto">${producto.title}</h4>
+                            <p class="texto marca">Marca: ${producto.brand}</p>
+                            <p class="texto descripcion">${producto.description}</p>
+                            <p class="texto precio">${producto.price}</p>
+                        </article>`;
     }
 
     seccion.innerHTML = productos;
