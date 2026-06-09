@@ -20,7 +20,7 @@
         <ul class="navizq">
             <li><a href="./index.html">INICIO</a></li>
             <li>
-                <form action="./search.html" method="GET">
+                <form action="./search.html" method="GET" class="formBuscador">
                     <div class="buscadorCampo">
                         <input type="text" name="busqueda" placeholder="Buscar productos...">
                         <button type="submit">BUSCAR</button>
@@ -39,86 +39,19 @@
     </nav>
     </header>
 
-<h1 class="coleccionIndex">No se encontraron resultados...</h1>
- <h1 class="coleccionIndex">Resultados de búsqueda</h1>
 
 <div class="contenedor">
 
-     <aside class="sidebar">
+    <aside class="sidebar">
         <h3>Categorías</h3>
-        <ul>
-            <li><a href="./category.html">Beauty</a></li>
-            <li><a href="./category.html">Fragrances</a></li>
-            <li><a href="./category.html">Furniture</a></li>
-            <li><a href="./category.html">Grocieres</a></li>
-            <li><a href="./category.html">Home</a></li>
-            <li><a href="./category.html">Decoration</a></li>
-            <li><a href="./category.html">Kitchen Accessories</a></li>
-            <li><a href="./category.html">Laptops</a></li>
-            <li><a href="./category.html">Mens Shirts</a></li>
-            <li><a href="./category.html">Mens Shoes</a></li>
-            <li><a href="./category.html">Mens Watches</a></li>
-            <li><a href="./category.html">Mobile Accesories</a></li>
-            <li><a href="./category.html">Motorcycle</a></li>
-            <li><a href="./category.html">Skin Care</a></li>
-            <li><a href="./category.html">Smartphones</a></li>
-            <li><a href="./category.html">Sports Accessories</a></li>
-            <li><a href="./category.html">Sunglasses</a></li>
-            <li><a href="./category.html">Tablets</a></li>
-            <li><a href="./category.html">Tops</a></li>
-            <li><a href="./category.html">Vehicle</a></li>
-            <li><a href="./category.html">Womens Bags</a></li>
-            <li><a href="./category.html">Womens Dresses</a></li>
-            <li><a href="./category.html">Womens Jewellery</a></li>
-            <li><a href="./category.html">Womens Shoes</a></li>
-            <li><a href="./category.html">Womens Watches</a></li>
+        <ul class="listaCategorias">
         </ul>
     </aside>
 
     <div class="contenido">
+        <h1 class="coleccionIndex resultadosTitulo"></h1>
         <section class="busqueda1">
-            <article class="elementos">
-                <img class="fotos" src="./imagenes/ropamujer6.jpg" alt="">
-                <h4>TOP CROP LUNARES</h4>
-                <p class="texto">Top crop de escote cuadrado y tirantes. Forro interior combinado. Cierre en espalda con cremallera metálica.</p>
-                <p class="texto">79.990,00 ARS</p>
-                <a class="detalle" href="./product.html">Ver detalle</a>
-            </article>
-
-        <article class="elementos">
-                    <img class="fotos" src="./imagenes/ropamujer9.jpg" alt="">
-                    <h4>PANTALÓN CAPRI DENIM</h4>
-                    <p class="texto">Pantalón de tiro medio con tejido principal confeccionado en hilatura de algodón. Bolsillos de vivo en delantero. Bajo acabado en aberturas laterales. Cierre frontal con cremallera, botón y ganchos metálicos.</p>
-                    <p class="texto">149.990,00 ARS</p>
-                    <a class="detalle" href="./product.html">Ver detalle</a>
-                </article>
-
-        <article class="elementos">
-                    <img class="fotos" src="./imagenes/hombrezara4.jpg" alt="">
-                    <h4>PANTALÓN RELAXED FIT PLIEGUES</h4>
-                    <p class="texto">Pantalón wide relaxed fit. Cintura con pliegues frontales dobles. Bolsillos en delantero y detalle de bolsillos traseros de vivo. Cierre frontal cruzado con cremallera y gancho metálico oculto.</p>
-                    <p class="texto">165.990,00 ARS</p>
-                    <a class="detalle" href="./product.html">Ver detalle</a>
-                </article>
-    </section>
-
-    <section class="productos2">
-        <article class="elementos">
-                    <img class="fotos" src="./imagenes/hombrezara4.jpg" alt="">
-                    <h4>PANTALÓN RELAXED FIT PLIEGUES</h4>
-                    <p class="texto">Pantalón wide relaxed fit. Cintura con pliegues frontales dobles. Bolsillos en delantero y detalle de bolsillos traseros de vivo. Cierre frontal cruzado con cremallera y gancho metálico oculto.</p>
-                    <p class="texto">165.990,00 ARS</p>
-                    <a class="detalle" href="./product.html">Ver detalle</a>
-                </article>
-
-        <article class="elementos">
-                    <img class="fotos" src="./imagenes/hombrezara1.jpg" alt="">
-                    <h4>CÁRDIGAN REGULAR FIT ALGODÓN</h4>
-                    <p class="texto">Cárdigan regular fit tejido en estructura compacta con hilatura de lana. Cuello pico y manga larga. Acabados en rib. Cierre frontal de botonadura.</p>
-                    <p class="texto">205.990,00 ARS</p>
-                    <a class="detalle" href="./product.html">Ver detalle</a>
-                </article>
-    </section>
+        </section>
     </div>
 
 </div>
@@ -132,6 +65,9 @@
     <p class="footerDerechos">© 2025 ARIES. Todos los derechos reservados. --- Diseño & Desarrollo — Digital House</p>
   </div>
 </footer>
+    <script src="./js/side.js"></script>
+    <script src="./js/search-results.js"></script>
+    <script src="./js/buscador.js"></script>
     <script src="./js/saludo.js"></script>
     <script src="./js/logout.js"></script>
 </body>
