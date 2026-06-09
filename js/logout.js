@@ -7,3 +7,4 @@ if (linkLogout !== null) {
         window.location.href = './index.html';
     });
 }
+
