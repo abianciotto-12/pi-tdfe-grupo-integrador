@@ -20,9 +20,11 @@ fetch(`https://dummyjson.com/products/categories/${id}`) /*agregar el id*/
 
     let productos = "";
 
-    for (let i = 0; i < data.length; i++) {
+    let listaProductos = data.products;
 
-        let producto = data[i];
+    for (let i = 0; i < listaProductos.length; i++) {
+
+        let producto = listaProductos[i];
 
         productos += `<article class="elementos">
                             <img class="fotos" src="${producto.thumbnail}" alt="">
