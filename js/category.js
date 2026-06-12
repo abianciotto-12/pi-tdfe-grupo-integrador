@@ -4,7 +4,7 @@ let queryStringObj = new URLSearchParams(queryString);
 
 let id = queryStringObj.get("id");  
 
-fetch(`https://dummyjson.com/products/categories/${id}`) /*agregar el id*/
+fetch(`https://dummyjson.com/products/category/${id}`) 
 
 .then(function(response) {
 
@@ -14,9 +14,8 @@ fetch(`https://dummyjson.com/products/categories/${id}`) /*agregar el id*/
 
 .then(function(data) {
 
-    console.log(data);
 
-    let seccion = document.querySelector(".productos1");
+    let seccion = document.querySelector(".elementos");
 
     let productos = "";
 
@@ -32,13 +31,13 @@ fetch(`https://dummyjson.com/products/categories/${id}`) /*agregar el id*/
                             <p class="texto marca">Marca: ${producto.brand}</p>
                             <p class="texto descripcion">${producto.description}</p>
                             <p class="texto precio">${producto.price}</p>
+                            <a class="detalle" href="./product.html?id=${producto.id}">Ver detalle</a>
                         </article>`;
     }
 
     seccion.innerHTML = productos;
 
-    console.log(seccion);
-
+    console.log(data.products);
 
 })
 
